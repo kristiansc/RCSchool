@@ -1,1 +1,2 @@
 # RCSchool
+Mācos kodēt 
