@@ -1,2 +1,2 @@
 # RCSchool
-Mācos kodēt 
+Mācos kodēt!!!!!
