@@ -20,6 +20,7 @@ namespace ConsoleApp1
 
 
 
+
             
         //pirmā funckija
         static void SayHello()
@@ -45,7 +46,7 @@ namespace ConsoleApp1
             vards = Console.ReadLine();
             Console.WriteLine("Vecums?");
             vecums = Console.ReadLine();
-            Console.WriteLine("Vārds "+vards+" Vecums "+vecums);
+            Console.WriteLine("Tavs Vārds ir "+vards+" Un tavs Vecums ir "+vecums);
             Console.ReadLine();
         }
     }
