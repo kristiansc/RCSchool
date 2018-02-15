@@ -10,10 +10,43 @@ namespace Kalkulators
     {
         static void Main(string[] args)
         {
-            //CalculateCircleArea();
-            CountTwoNumbers();
-        }
+            string usersInput = "0";
+            while (usersInput != "x")
+            {
+                Console.WriteLine("please choose action");
+                Console.WriteLine("a - calculate circle are");
+                Console.WriteLine("c - count two numbers together");
+                Console.WriteLine("d - Number divoide check");
+                //RadLine nolasa lietotāja ievadi
+                usersInput = Console.ReadLine();
+                if (usersInput == "a")
+                {
+                    CalculateCircleArea();
+                }
 
+                else if (usersInput == "c")
+                {
+                    CountTwoNumbers();
+                }
+                else if (usersInput == "d")
+                {
+                    DoesTheNmuberDivide();
+                }
+                else if (usersInput == "x")
+                {
+                    //pabeidz ciklu
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Sorry, did not understand");
+                }
+                Console.ReadLine();
+            }
+
+
+
+        }
 
 
         //--------------------------------------------------
@@ -64,5 +97,22 @@ namespace Kalkulators
             Console.WriteLine("Rezultāts ir " + rezultats);
             Console.ReadLine();
         }
+        static void DoesTheNmuberDivide()
+        {
+            double dalamais = GetNumberFromUser("Lūdzu ievadiet dalāmo");
+            double dalitajs = GetNumberFromUser("Lūdzu ievadiet dalītāju");
+            // % - skatlis ar atlikumu
+            double modulis = dalamais % dalitajs;
+            // vienads == 
+            if (modulis == 0)
+            {
+                Console.WriteLine("Šie skaitļi dalās");
+            }
+            else
+            {
+                Console.WriteLine("Šie skaitļi nedalās");
+            }
+        }
+
     }
 }
