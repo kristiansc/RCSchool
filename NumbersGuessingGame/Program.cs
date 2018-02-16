@@ -10,7 +10,20 @@ namespace NumbersGuessingGame
     {
         static void Main(string[] args)
         {
-            Spele();   
+            Console.WriteLine("Vai vēlies sāk spēli?");
+            Console.WriteLine("Y - Sākt");
+            Console.WriteLine("N - Izbeigt");
+            string saktspeli;
+            saktspeli = Console.ReadLine();
+            if (saktspeli == "Y")
+            {
+                Spele();
+            }
+            else if (saktspeli == "N")
+            {
+                Console.WriteLine("Paldies par spēli!");
+                Console.ReadLine();
+            }   
 
         }
         static void Spele()
@@ -24,6 +37,11 @@ namespace NumbersGuessingGame
                 Console.WriteLine("lūdzu izvēlieties maksimālo skaitli, ko minēt");
                 int maxNumber = int.Parse(Console.ReadLine());
                 Random randomNumberMaker = new Random();
+                if (minNumber > maxNumber)
+                {
+                    Console.WriteLine("Minimālais skaitlis nevar būt lielāks par maksimālo skaitli");
+                    Spele();
+                }
                 // uzģenerēt gadījuma skaitli līdz šai robežai
                 randomskaitlis = randomNumberMaker.Next(minNumber, maxNumber);
                 // cikls: kamēr lietotājs neuzmin:
