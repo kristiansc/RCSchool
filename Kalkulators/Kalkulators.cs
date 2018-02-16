@@ -18,7 +18,7 @@ namespace Kalkulators
                 Console.WriteLine("a - calculate circle are");
                 Console.WriteLine("c - count two numbers together");
                 Console.WriteLine("d - Number divoide check");
-                //RadLine nolasa lietotāja ievadi
+                //ReadLine nolasa lietotāja ievadi
                 usersInput = Console.ReadLine();
                 if (usersInput == "a")
                 {
