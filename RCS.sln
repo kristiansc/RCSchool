@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulators", "Kalkulators\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersGuessingGame", "NumbersGuessingGame\NumbersGuessingGame.csproj", "{062A63CE-D50D-4528-BB7C-089BC8371203}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGame2", "NumberGame2\NumberGame2.csproj", "{CF5811EF-7CF9-4E64-8545-711637A1D915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{D9E54721-075F-41A2-A511-EDD79BBCC353}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{062A63CE-D50D-4528-BB7C-089BC8371203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062A63CE-D50D-4528-BB7C-089BC8371203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062A63CE-D50D-4528-BB7C-089BC8371203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF5811EF-7CF9-4E64-8545-711637A1D915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5811EF-7CF9-4E64-8545-711637A1D915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5811EF-7CF9-4E64-8545-711637A1D915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5811EF-7CF9-4E64-8545-711637A1D915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

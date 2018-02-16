@@ -75,7 +75,7 @@ namespace Kalkulators
             double parsedNumber;
             // parveidojam tekstu par skaitli un ierakstam mainigaja
             bool parseWasSucess = double.TryParse(textinput, out parsedNumber);
-            if (parseWasSucess == false)
+            if (!parseWasSucess)
             {
                 Console.WriteLine("Slikti ievadīts skaitlis " + textinput);
                 Console.WriteLine("Ievadi skaitli atkārtoti");
