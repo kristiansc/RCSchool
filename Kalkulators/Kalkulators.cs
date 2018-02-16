@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 namespace Kalkulators
 {
     class Kalkulators
-    {
+    {   //static = funkcija 
         static void Main(string[] args)
         {
             string usersInput = "0";
+            //while = cikls
             while (usersInput != "x")
             {
                 Console.WriteLine("please choose action");
