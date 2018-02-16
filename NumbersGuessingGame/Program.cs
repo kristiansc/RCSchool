@@ -7,31 +7,58 @@ using System.Threading.Tasks;
 namespace NumbersGuessingGame
 {
     class Program
-    {   
+    {
         static void Main(string[] args)
         {
-            while (true)
+            spele();   
+
+        }
+        static void spele()
+        {
+            int minamaisskaitlis = 1;
+            int randomskaitlis = 2;
             {
-                //izveidojam mainīgo, kur glabāt random skaitli
-                //paprasīt lietotājam, cik lielu skaitli viņš grib minēt
-                //uzģenerēt gadījuma skaitli līdz šai robežai
+                // paprasīt lietotājam, cik lielu skaitli viņš grib minēt
+                Console.WriteLine("lūdzu izvēlieties maksimālo skaitli, ko minēt");
                 int maxNumber = int.Parse(Console.ReadLine());
-                Random diceNumberGenerator;
-                diceNumberGenerator = new Random();
-                // paprasam nejaušu skaitli, skaitļu ģeneratoram
-                int diceValue = diceNumberGenerator.Next(0, maxNumber);
-                string tavsskatilis;
-                int parsednumber;
-                Console.WriteLine("Lūdzu ievadi savu skaitli");
-                tavsskatilis = Console.ReadLine();
-                int.Parse(tavsskatilis, out parsednumber);
-                if (diceValue == parsednumber)
+
+                Random randomNumberMaker = new Random();
+                // uzģenerēt gadījuma skaitli līdz šai robežai
+                randomskaitlis = randomNumberMaker.Next(1, maxNumber);
+                // cikls: kamēr lietotājs neuzmin:
+                while (minamaisskaitlis != randomskaitlis)
                 {
-                    break;
+                    Console.WriteLine("Uzmini uzģenerēto skaitli");
+                    minamaisskaitlis = int.Parse(Console.ReadLine());
+
+                    if (minamaisskaitlis == randomskaitlis)
+                    {
+                        Console.WriteLine("Apsveicu tu uzminēji savu nejauši gēnerēto skaitli, tavs skaitlis ir " + randomskaitlis);
+                        Console.WriteLine("Y - Ja vēlies spēlēt atkal");
+                        Console.WriteLine("N - Ja nevēlies spēlēt atkal");
+                        string speletatkal;
+                        speletatkal = Console.ReadLine();
+                        if (speletatkal == "Y")
+                        {
+                            spele();
+                        }
+                        else if (speletatkal == "N")
+                        {
+                            Console.WriteLine("Paldies par spēli");
+                            Console.ReadLine();
+                            break;
+                        }
+                    }
+                    else if (minamaisskaitlis > randomskaitlis)
+                    {
+                        Console.WriteLine("Tavs skaitlis ir lielāks nekā nejaušais skaitlis");
+                    }
+                    else if (minamaisskaitlis < randomskaitlis)
+                    {
+                        Console.WriteLine("Tavs skaitlis ir mazāks nekā nejaušais skaitlis");
+                    }
                 }
             }
-            
-            
         }
     }
 }
