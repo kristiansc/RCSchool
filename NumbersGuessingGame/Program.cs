@@ -10,22 +10,30 @@ namespace NumbersGuessingGame
     {
         static void Main(string[] args)
         {
+            saktspeli();
+        }
+
+        static void saktspeli()
+        {
+            // vai sākt spēli?
             Console.WriteLine("Vai vēlies sāk spēli?");
             Console.WriteLine("Y - Sākt");
             Console.WriteLine("N - Izbeigt");
             string saktspeli;
             saktspeli = Console.ReadLine();
+            //ja ja tad ejam uz funkciju
             if (saktspeli == "Y")
             {
                 Spele();
             }
             else if (saktspeli == "N")
-            {
+            {   // ja ne tad exit
                 Console.WriteLine("Paldies par spēli!");
                 Console.ReadLine();
-            }   
-
+            }
         }
+
+
         static void Spele()
         {
             int minamaisskaitlis = 1;
