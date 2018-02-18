@@ -43,9 +43,10 @@ namespace NumberGame2
                     }
                     if (trycount == 4)
                     {
-                        Console.WriteLine("Sorry, tu zaudēji");
+                        Console.WriteLine("Sorry, tu zaudēji, random skaitlis bija " + randomskaitlis);
                     }
                 }
+
                 Console.ReadLine();
             }
         }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGame2", "NumberGame2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{D9E54721-075F-41A2-A511-EDD79BBCC353}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{67AB686F-94E0-4D1C-9BE9-7AEEBE0C386B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9E54721-075F-41A2-A511-EDD79BBCC353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AB686F-94E0-4D1C-9BE9-7AEEBE0C386B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AB686F-94E0-4D1C-9BE9-7AEEBE0C386B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AB686F-94E0-4D1C-9BE9-7AEEBE0C386B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AB686F-94E0-4D1C-9BE9-7AEEBE0C386B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
