@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace ToDoList
         List<string> todoEntries;
         public void AddNewToDo(string task)
         {
-            Console.WriteLine("Uzdevums pievienot:" + task);
+            Console.WriteLine("Uzdevums pievienots:" + task);
             todoEntries.Add(task);
         }
 
@@ -29,7 +30,40 @@ namespace ToDoList
             // i ir saisinajums no indeks = skaititjas
             for (int i = 0; i < todoEntries.Count; i++)
             {
-                Console.WriteLine("Tavs daramo lietu saraksts ir " + todoEntries[i]);
+                Console.WriteLine((i + 1) + ". " + todoEntries[i]);
+            }
+        }
+
+        public void DeleteToDo(int indexOfTodo)
+        {
+            todoEntries.RemoveAt(indexOfTodo);
+            if (indexOfTodo >= this.todoEntries.Count)
+            {
+                Console.WriteLine("šāds ieraksts neeksitē");
+                return;
+            }
+            todoEntries.RemoveAt(indexOfTodo);
+        }
+
+        public void DeleteAll()
+        {
+            todoEntries.Clear();
+        }
+
+        public void SaveToFile()
+        {
+            for (int i = 0; i < todoEntries.Count; i++)
+            {
+                File.AppendAllText(@"C:\Users\Edgars\Documents\todoapp\todo.txt", todoEntries[i] + "\n");
+            }
+            
+        }
+        public void ReadFromFile()
+        {
+            string[] readtext = File.ReadAllLines(@"C:\Users\Edgars\Documents\todoapp\todo.txt");
+            foreach (string listEntry in readtext)
+            {
+                todoEntries.Add(listEntry);
             }
         }
     }
