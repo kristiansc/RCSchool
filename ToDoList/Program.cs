@@ -38,6 +38,12 @@ namespace ToDoList
                         int indexOfTodo = int.Parse(Console.ReadLine());
                         list.DeleteToDo(indexOfTodo -1);
                         break;
+                    case "at":
+                        Console.WriteLine("Lūdzu ievadi izpildītās lietas nr.");
+                        list.ShowAllTodos();
+                        int indexdone = int.Parse(Console.ReadLine());
+                        list.MarkTodoAsDone(indexdone - 1);
+                        break;
                     case "v":
                         list.DeleteAll();
                         break;
@@ -47,9 +53,8 @@ namespace ToDoList
                     case "i":
                         list.ReadFromFile();
                         break;
-                  
-                    
                 }
+
                 //pievienot jaunu daramo lietu
                 //dzest visas daramas lietas
                 //izvadit visas daramas lietas uz ekrana
