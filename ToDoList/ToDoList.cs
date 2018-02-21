@@ -16,6 +16,7 @@ namespace ToDoList
             todoEntries = new List<TodoListEntry>();
         }
         List<TodoListEntry> todoEntries;
+
         public void AddNewToDo(string task)
         {
             Console.WriteLine("Uzdevums pievienots:" + task);

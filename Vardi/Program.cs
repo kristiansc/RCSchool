@@ -10,6 +10,12 @@ namespace Vardi
     {
         static void Main(string[] args)
         {
+            NumberList list = new NumberList();
+            while (true)
+            {
+                Console.WriteLine("Ievadi vārdu, no kuriem burtiem minēt");
+                string userInput = Console.ReadLine();
+            }
         }
     }
 }
