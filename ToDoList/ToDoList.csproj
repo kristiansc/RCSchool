@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DoList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToDoList.cs" />
     <Compile Include="TodoListEntry.cs" />

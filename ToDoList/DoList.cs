@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToDoList
 {
-    class Program
+    class DoList
     {
         static void Main(string[] args)
         {
@@ -54,7 +54,7 @@ namespace ToDoList
                         list.ReadFromFile();
                         break;
                 }
-
+                
                 //pievienot jaunu daramo lietu
                 //dzest visas daramas lietas
                 //izvadit visas daramas lietas uz ekrana

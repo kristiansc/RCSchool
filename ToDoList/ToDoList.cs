@@ -72,12 +72,13 @@ namespace ToDoList
         }
         public void ReadFromFile()
         {
+            DeleteAll();
             if (!File.Exists(file))
             {
                 return;
             }
             string[] readtext = File.ReadAllLines(file);
-            for (var index = 0; index < readtext.Length; index += 2)
+            for (var index = 0; index < readtext.Length; index += 23)
             {
                 string listEntry = readtext[index];
                 TodoListEntry filetodo = new TodoListEntry();

@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{67AB686F-94E0-4D1C-9BE9-7AEEBE0C386B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vardi", "Vardi\Vardi.csproj", "{4E5865A7-55D2-4481-A67D-B8AB632ED14D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainsOnlyApp", "Vardi\ContainsOnlyApp.csproj", "{4E5865A7-55D2-4481-A67D-B8AB632ED14D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvertsWebApp", "AdvertsWebApp\AdvertsWebApp.csproj", "{0F6DB081-E4FC-42D9-8233-FB76640A2413}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4E5865A7-55D2-4481-A67D-B8AB632ED14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E5865A7-55D2-4481-A67D-B8AB632ED14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E5865A7-55D2-4481-A67D-B8AB632ED14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6DB081-E4FC-42D9-8233-FB76640A2413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6DB081-E4FC-42D9-8233-FB76640A2413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6DB081-E4FC-42D9-8233-FB76640A2413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6DB081-E4FC-42D9-8233-FB76640A2413}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
