@@ -1,4 +1,16 @@
-﻿
+﻿<!-- šajā vietā norādam šim failam, kāds modelis tiks tam iedots, kad šo failu
+    mēģinās uzģenerēt -->
+@model List<AdvertsWebApp.Models.Advert>
+<h1>Visi sludinājumi</h1>
+<!-- šajā vietā izmantojot foreach ciklu, uzģenerēsim HTML kodu priekš katra
+    sludinājuma -->
+@foreach(var ad in Model)
+{
+    <p>
+        <a href="/Home/Advert?advertId=@ad.AdvertId">
+            @ad.Name - @ad.Price eur
+        </a>
+    </p> 
+}
 
-<h2>Index</h2>
-
+@Html.ActionLink("pievienot jaunu sludinājumu", "CreateAdvert")
